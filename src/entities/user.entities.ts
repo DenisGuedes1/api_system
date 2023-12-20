@@ -24,6 +24,12 @@ export class Users {
 
     @Column()
     isAdmin: Boolean;
+    
+    @Column()
+    state: string;
+
+    @Column()
+    district: string;
 
     @Column({
         type: "text",

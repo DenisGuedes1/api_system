@@ -1,6 +1,6 @@
 import express, { Application } from "express";
 import "express-async-errors";
-// import { handlreErrors } from "./error/handleError";
+import { handlreErrors } from "./error/handleError";
 
 import cors from "cors";
 
@@ -19,5 +19,5 @@ app.use(
     })
 );
 
-// app.use(handlreErrors);
+app.use(handlreErrors);
 export default app;

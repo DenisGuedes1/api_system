@@ -9,6 +9,9 @@ export class Size {
   @Column()
   size: string;
 
+  @Column({ type: "numeric", precision: 10, scale: 2 })
+  price:number;
+
   @OneToMany(() => Menu, menu => menu.size)
   menuItems: Menu[];
 }

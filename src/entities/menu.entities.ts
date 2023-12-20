@@ -23,10 +23,7 @@ export class Menu {
     @ManyToOne(() => Size, size => size.menuItems)
     size: Size;
 
-    @Column({ type: "numeric", precision: 10, scale: 2 })
-    price:number;
-    
-    
+        
     @Column({ type: "text", array: true })
     drinks: string[];
 
